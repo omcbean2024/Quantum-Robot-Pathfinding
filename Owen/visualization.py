@@ -1,0 +1,1 @@
+# Display the warehouse and robot movements
