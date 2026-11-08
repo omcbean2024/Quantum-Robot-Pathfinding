@@ -23,4 +23,6 @@ qc.measure_all()
 result = StatevectorSampler().run([qc], shots=1000).result()
 counts = result[0].data.meas.get_counts()
 
-print(f"Bell state counts: {counts}")
+print("\nBell State Simulator Test:")
+print(f"Measurement counts: {counts}")
+print("Setup check completed.")

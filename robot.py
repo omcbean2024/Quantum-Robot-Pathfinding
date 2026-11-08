@@ -1,1 +1,0 @@
-# Robot positions, battery, destination

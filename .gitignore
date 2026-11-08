@@ -1,3 +1,18 @@
+# Python environment
 .venv/
+venv/
+
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Environment variables and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Editor / operating system files
+.vscode/
+.DS_Store
+Thumbs.db
