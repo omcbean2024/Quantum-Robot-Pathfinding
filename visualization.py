@@ -1,5 +1,4 @@
 import random
-random.seed(42)
 import sys
 import time
 import traceback
@@ -34,7 +33,7 @@ clock = pygame.time.Clock()
 
 CHARGING_CELLS = [[11, 5]]
 START_POSITION = [11, 5]
-USE_QUANTUM_HARDWARE = True
+USE_QUANTUM_HARDWARE = False
 PROTECTED_CELLS = [
     *CHARGING_CELLS,
 ]
@@ -115,7 +114,7 @@ def create_three_layouts():
         try:
             print("\nNumber of candidate routes:", len(candidate_routes))
 
-            qaoa_runs = 1 if USE_QUANTUM_HARDWARE else 30
+            qaoa_runs = 1 if USE_QUANTUM_HARDWARE else 1
             selected_backend = "hardware" if USE_QUANTUM_HARDWARE else "simulator"
             optimal_probabilities = []
             correct_selections = 0
